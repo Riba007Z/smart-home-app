@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+requests
+urllib3
+xknx
+selenium
+webdriver-manager
