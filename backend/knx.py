@@ -8,7 +8,7 @@ import asyncio
 xknx = XKNX(
     connection_config=ConnectionConfig(
         connection_type=ConnectionType.TUNNELING,
-        gateway_ip="192.168.64.118",
+        gateway_ip="192.168.64.118",  #1home ip address
         gateway_port=3671,
     )
 )
