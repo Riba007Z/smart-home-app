@@ -4,7 +4,7 @@ react app for controlling 1home server instalations with voice controll
 
 #start backend
 $cd backend
-$source venv/Source/activate
+$source venv/Scripts/activate
 $uvicorn main:app --host 0.0.0.0
 
 
