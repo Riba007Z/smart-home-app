@@ -1,0 +1,15 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/192.168.64.110.pem:/certs/192.168.64.110.pem:ro
+      - ./backend/192.168.64.110-key.pem:/certs/192.168.64.110-key.pem:ro
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend

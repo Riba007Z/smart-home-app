@@ -116,7 +116,7 @@ function App() {
       }}
     >
       <h1>Smart Home</h1> <VoiceButton />
-      {<div style={{ color: "red" }}>Devices loaded: {devices.length}</div>}
+      {/*<div style={{ color: "red" }}>Devices loaded: {devices.length}</div>*/}
       {Object.entries(rooms).map(([room, roomDevices]) => (
         <div
           key={room}

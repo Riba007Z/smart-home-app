@@ -10,7 +10,7 @@ from onehome import get_devices
 
 from fastapi.middleware.cors import CORSMiddleware
 
-from slovenian_voice import get_text
+#from slovenian_voice import get_text
 
 
 app = FastAPI()
@@ -435,11 +435,11 @@ def voice(command: VoiceCommand):
 
     }
     
-@app.get("/listen")
+"""@app.get("/listen")
 def listen():
 
     text = get_text()
 
     return {
         "text": text
-    }
+    }"""
